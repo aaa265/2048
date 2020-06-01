@@ -1,12 +1,12 @@
 {
-  "name": "reason-react-examples",
+  "name": "reason-react-example",
   "reason": {
     "react-jsx": 3
   },
-  "sources": {
+  "sources": [{
     "dir" : "src",
     "subdirs" : true
-  },
+  }],
   "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
   "package-specs": [{
     "module": "commonjs",
@@ -17,5 +17,15 @@
   "bs-dependencies": [
     "reason-react"
   ],
-  "refmt": 3
+  "bs-dev-dependencies": ["@glennsl/bs-jest"],
+  "refmt": 3,
+  "gentypeconfig": {
+    "language": "typescript",
+    "module": "es6",
+    "importPath": "relative",
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  }
 }
